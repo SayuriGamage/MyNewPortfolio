@@ -1,0 +1,35 @@
+
+
+section:nth-child(2){
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section:nth-child(2)>header>h1{
+   margin-block-start: 1em;
+  text-align: center;
+    color: white;
+   font-size: 45px;
+
+
+}
+section:nth-child(2)>header>h3{
+
+    color: white;
+    text-align: center;
+    font-weight: 150;
+     font-size: 25px;
+}
+
+section:nth-child(2)>div>p{
+    color: azure;
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 1em;
+    margin-inline-start: 240px;
+    margin-inline-end: 240px;
+    unicode-bidi: isolate;
+    font-size: 20px;
+}
+
