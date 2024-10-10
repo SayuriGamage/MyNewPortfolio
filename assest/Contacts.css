@@ -18,7 +18,7 @@ section:nth-of-type(7)>div:nth-child(1){
     );
     -webkit-background-clip: text;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 170px;
 }
 
 
@@ -52,5 +52,29 @@ section:nth-of-type(7)>div:nth-child(3){
     margin-top: 45px;
     color: white;
     font-size: 30px;
+}
+
+section:nth-of-type(7)>div:nth-child(4){
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 30px;
+}
+
+section:nth-of-type(7)>div:nth-child(5){
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.98);
+    font-size: 25px;
+}
+
+section:nth-of-type(7)>div:nth-child(6){
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
 }
 
