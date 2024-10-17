@@ -103,34 +103,103 @@ section:nth-of-type(4)>div:nth-child(1)>div:nth-child(2){
 }
 
 
+@media (max-width: 1024px) {
+    #topic1, #topic2, #topic3 {
+        font-size: 18px;
+    }
+    #para1, #para2, #para3 {
+        font-size: 16px;
+    }
+    #middle {
+        height: 400px;
+    }
+    #divs {
+        padding: 0 200px;
+    }
+    section:nth-of-type(4)>div:nth-child(1)>div:nth-child(1) {
+        font-size: 38px;
+    }
+}
 
+/* For screens of 768px and below */
+@media (max-width: 768px) {
+    #topic1, #topic2, #topic3 {
+        font-size: 16px;
+    }
+    #para1, #para2, #para3 {
+        font-size: 15px;
+    }
+    #middle {
+        height: 300px;
+    }
+    #divs {
+        padding: 0 100px;
+    }
+    section:nth-of-type(4)>div:nth-child(1)>div:nth-child(1) {
+        font-size: 35px;
+    }
+}
 
+/* For screens of 425px and below */
+@media (max-width: 425px) {
+    #topic1, #topic2, #topic3 {
+        font-size: 14px;
+    }
+    #para1, #para2, #para3 {
+        font-size: 14px;
+    }
+    #middle {
+        height: 250px;
+    }
+    #divs {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 50px;
+    }
+    section:nth-of-type(4)>div:nth-child(1)>div:nth-child(1) {
+        font-size: 28px;
+    }
+}
 
+/* For screens of 375px and below */
+@media (max-width: 375px) {
+    #topic1, #topic2, #topic3 {
+        font-size: 12px;
+    }
+    #para1, #para2, #para3 {
+        font-size: 13px;
+    }
+    #middle {
+        height: 200px;
+    }
+    #divs {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+    section:nth-of-type(4)>div:nth-child(1)>div:nth-child(1) {
+        font-size: 25px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* For screens of 320px and below */
+@media (max-width: 320px) {
+    #topic1, #topic2, #topic3 {
+        font-size: 11px;
+    }
+    #para1, #para2, #para3 {
+        font-size: 12px;
+    }
+    #middle {
+        height: 150px;
+    }
+    #divs {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    section:nth-of-type(4)>div:nth-child(1)>div:nth-child(1) {
+        font-size: 22px;
+    }
+}
 
 
 
