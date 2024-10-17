@@ -30,14 +30,16 @@
 
 <!--header section-->
 <header>
+    <div class="menu-btn">&#9776;</div>
     <nav>
         <ul>
-            <a>About</a>
-            <a>Service</a>
-            <a>Skill</a>
-            <a>Project</a>
-            <a>Assignment</a>
-            <a>Contact</a>
+
+            <a href="#section2">About</a>
+            <a href="#section3">Services</a>
+            <a href="#section4">Skill</a>
+            <a href="#section5">Projects</a>
+            <a href="#section5">Assignment</a>
+            <a href="#section6">Contact</a>
         </ul>
     </nav>
 </header>
@@ -194,7 +196,7 @@
     </div>
 
    <div id="project_list1">
-
+d
    <div id="div1" data-aos="fade-up">
        <div>medical Equipment Management</div>
        <p>Medical equipment maintenance is the process of ensuring that medical devices and equipment function properly, safely, and efficiently. and repair of medical tools and machines.<a href=""><span class="highlight">Show Project</span></a></p>
@@ -287,6 +289,12 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+    const menuBtn = document.querySelector('.menu-btn');
+    const navMenu = document.querySelector('nav ul');
+
+    menuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
 </script>
 
 
