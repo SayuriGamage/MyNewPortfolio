@@ -32,6 +32,7 @@
 <header>
     <div class="menu-btn">&#9776;</div>
     <nav>
+        <button class="menu-btn">☰</button>
         <ul>
 
             <a href="#section2">About</a>
@@ -294,6 +295,10 @@ d
 
     menuBtn.addEventListener('click', () => {
         navMenu.classList.toggle('active');
+    });
+
+    document.querySelector(".menu-btn").addEventListener("click", function() {
+        document.querySelector("header nav ul").classList.toggle("show-menu");
     });
 </script>
 
