@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assest/Assignment.css">
     <link rel="stylesheet" href="assest/Contacts.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
             rel="stylesheet"
@@ -27,9 +28,37 @@
 </head>
 
 <body>
-
+<nav>
+    <div class="navbar">----/
+        <section id="nav">
+            <ul class="menu">
+                <li>
+                    <a class="menu-option" href="#about"><span>About Me</span></a>
+                </li>
+                <li>
+                    <a class="menu-option" href="#resume"><span>Service</span></a>
+                </li>
+                <li>
+                    <a class="menu-option" href="#projects"><span>Skills</span></a>
+                </li>
+                <li>
+                    <a class="menu-option" href="#assignment"><span>Projects</span></a>
+                </li>
+                <li>
+                    <a class="menu-option" href="#about1"><span>Assignment</span></a>
+                </li>
+                <li>
+                    <a class="menu-option" href="#contact"><span>Contact</span></a>
+                </li>
+            </ul>
+            <span class="collapse-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </span>
+        </section>
+    </div>
+</nav>
 <!--header section-->
-<header>
+<!--<header>
     <div class="menu-btn">&#9776;</div>
     <nav>
         <ul>
@@ -42,7 +71,7 @@
             <a href="#section6">Contact</a>
         </ul>
     </nav>
-</header>
+</header>-->
 <!--hero section-->
 <section id="sec1">
 
@@ -288,7 +317,19 @@
 <script>
     AOS.init();
 </script>
-
+<script>
+    const nav = document.querySelector('.menu');
+    nav.classList.add('hidden');
+    document.querySelector('.collapse-icon').addEventListener('click', () => {
+        if (nav.classList.contains('hidden')) {
+            nav.classList.remove('hidden');
+            nav.classList.add('menu-transition');
+        } else {
+            nav.classList.add('hidden');
+            nav.classList.remove('menu-transition');
+        }
+    });
+</script>
 
 </body>
 
