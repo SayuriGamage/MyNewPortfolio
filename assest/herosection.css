@@ -208,7 +208,7 @@ body{
     margin-left: 757px;
     margin-top: -381px;
     animation: bounceIn 3s ease-in-out;
-    box-shadow: rgba(255, 255, 255, 0.7) 0px 3px 6px, rgb(255, 255, 255) 0px 3px 6px;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 3px 6px, rgba(255, 255, 255, 0.09) 0px 3px 6px;
 }
 
 
@@ -417,27 +417,28 @@ body{
         width: 100%;
     }
     #image>img {
-        height: 268px;
-        width: 346px;
+        height: 286px;
+        width: 355px;
         margin-top: 35px;
-        margin-left: 20px; /* Remove margin-left to center the image */
+        margin-left: 10px;
+
     }
     #icons {
         display: flex;
-        justify-content: center; /* Center the icons */
-        gap: 20px; /* Add space between icons */
+        justify-content: center;
+        gap: 20px;
         margin-top: 20px;
     }
 }
 
-/* For screens of 320px and below */
+
 @media (max-width: 320px) {
     header {
       display: none;
     }
     #hero {
         flex-direction: column;
-        align-items: center; /* Center contents */
+        align-items: center;
         margin-left: 0;
     }
     #text1, #text2, #text3, #text4 {
