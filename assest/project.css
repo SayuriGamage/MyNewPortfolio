@@ -219,6 +219,17 @@ section:nth-of-type(5)>div:nth-child(1){
         width: 293px;
         height: 385px;
     }
+
+    #img1{
+
+        height: 168px;
+        width: 143px;
+    }
+    #img2{
+
+        height: 150px;
+        width: 131px;
+    }
 }
 
 
