@@ -32,7 +32,6 @@
 <header>
     <div class="menu-btn">&#9776;</div>
     <nav>
-        <button class="menu-btn">☰</button>
         <ul>
 
             <a href="#section2">About</a>
@@ -65,7 +64,6 @@
     </div>
     <div id="image">
         <img src="assest/imeges/mainimage.jpg" alt="myimage" >
-
 
     </div>
 
@@ -290,16 +288,6 @@ d
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-    const menuBtn = document.querySelector('.menu-btn');
-    const navMenu = document.querySelector('nav ul');
-
-    menuBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-
-    document.querySelector(".menu-btn").addEventListener("click", function() {
-        document.querySelector("header nav ul").classList.toggle("show-menu");
-    });
 </script>
 
 

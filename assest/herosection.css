@@ -130,6 +130,22 @@ header>nav>ul>a{
     animation: bounceIn 3s ease-in-out;
 }
 
+#image>div {
+    background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.15),
+            rgba(255, 255, 255, 0.09),
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.09),
+            rgb(255, 255, 255)
+    );
+    height: 400px;
+    width: 700px;
+    border-radius: 100%;
+    margin-left: 634px;
+    margin-top: -407px;
+    z-index: 50;
+}
 
 #icons a img {
     width: 29px;
@@ -189,9 +205,11 @@ header>nav>ul>a{
 
 
 @media (max-width: 1024px) {
-
+    header {
+        width: 600px;
+    }
     #hero {
-        margin-left: 100px;
+        margin-left: 83px;
     }
     #text1 {
         font-size: 22px;
@@ -204,54 +222,62 @@ header>nav>ul>a{
     }
     #text4 {
         font-size: 14px;
-        width: 550px;
+        width: 478px;
     }
     #image>img {
-        height: 350px;
-        width: 550px;
-        margin-left: 600px;
-    }
-
-}
-
-/* For screens of 768px and below */
-@media (max-width: 768px) {
-
-    #hero {
-        margin-left: 80px;
-    }
-    #text1 {
-        font-size: 20px;
-    }
-    #text2 {
-        font-size: 45px;
-    }
-    #text3 {
-        font-size: 30px;
-    }
-    #text4 {
-        font-size: 13px;
-        width: 500px;
-    }
-    #image>img {
-        height: 300px;
-        width: 500px;
-        margin-left: 500px;
-    }
-
-
-}
-
-/* For screens of 425px and below */
-@media (max-width: 425px) {
-
-    #hero {
-        flex-direction: column;
-        margin-left: 20px;
+        height: 347px;
+        width: 456px;
+        margin-left: 552px;
     }
 
     #box{
         display: none;
+    }
+}
+
+/* For screens of 768px and below */
+@media (max-width: 768px) {
+    header {
+        width: 550px;
+    }
+    #hero {
+        margin-left: 41px;
+        margin-top: 187px;
+    }
+    #text1 {
+        font-size: 17px;
+    }
+    #text2 {
+        font-size: 39px;
+    }
+    #text3 {
+        font-size: 28px;
+    }
+    #text4 {
+        font-size: 11px;
+        width: 344px;
+    }
+    #image>img {
+        height: 286px;
+        width: 355px;
+        margin-left: 395px;
+       margin-top: -225px;
+
+    }
+}
+
+/* For screens of 425px and below */
+@media (max-width: 425px) {
+    header {
+        width: 90%;
+        padding: 5px;
+    }
+    #hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center both icons and image */
+        margin-top: 78px;
+        text-align: center;
     }
     #text1 {
         font-size: 18px;
@@ -267,25 +293,31 @@ header>nav>ul>a{
         width: 100%;
     }
     #image>img {
-        height: 200px;
-        width: 280px;
-        margin-left: 0;
-        margin-top: 0;
+        height: 286px;
+        width: 355px;
+        margin-top: 35px;
+        margin-left: 49px; /* Ensure the image is centered */
     }
-
-
+    #icons {
+        display: flex;
+        justify-content: center; /* Center icons */
+        gap: 15px; /* Space between icons */
+        margin-top: 20px;
+    }
 }
 
-/* For screens of 375px and below */
 @media (max-width: 375px) {
-
-    #hero {
-        flex-direction: column;
-        margin-left: 10px;
+    header {
+        width: 85%;
+        padding: 5px;
     }
-
-    #box{
-        display: none;
+    #hero {
+        margin-top: 78px;
+        flex-direction: column;
+        align-items: center; /* Center contents */
+    }
+    #text1, #text2, #text3, #text4 {
+        text-align: center;
     }
     #text1 {
         font-size: 16px;
@@ -301,24 +333,32 @@ header>nav>ul>a{
         width: 100%;
     }
     #image>img {
-        height: 220px;
-        width: 300px;
-        margin-left: 0;
-        margin-top: 0;
+        height: 268px;
+        width: 346px;
+        margin-top: 35px;
+        margin-left: 27px; /* Remove margin-left to center the image */
     }
-
+    #icons {
+        display: flex;
+        justify-content: center; /* Center the icons */
+        gap: 20px; /* Add space between icons */
+        margin-top: 20px;
+    }
 }
 
-
+/* For screens of 320px and below */
 @media (max-width: 320px) {
-
+    header {
+        width: 80%;
+        padding: 5px;
+    }
     #hero {
         flex-direction: column;
+        align-items: center; /* Center contents */
         margin-left: 0;
     }
-
-    #box{
-        display: none;
+    #text1, #text2, #text3, #text4 {
+        text-align: center;
     }
     #text1 {
         font-size: 14px;
@@ -336,154 +376,13 @@ header>nav>ul>a{
     #image>img {
         height: 200px;
         width: 280px;
-        margin-left: 0;
-        margin-top: 0;
+        margin-top: 14px;
+        margin-left: 34px; /* Remove margin-left to center the image */
     }
-
-}
-
-@media (max-width: 1024px) {
-    header {
-        width: 90%;
-    }
-    header>nav>ul>a {
-        font-size: 17px;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        width: 100%;
-    }
-
-    header > nav > ul {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 50px;
-        left: 0;
-        padding: 10px 0;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    header > nav > ul.show-menu {
+    #icons {
         display: flex;
-    }
-
-    header > nav > ul > a {
-        font-size: 16px;
-        padding: 10px 20px;
-        width: 100%;
-        text-align: center;
+        justify-content: center; /* Center the icons */
+        gap: 15px; /* Add space between icons */
+        margin-top: 15px;
     }
 }
-
-@media (max-width: 425px) {
-    header {
-        width: 100%;
-    }
-
-    header > nav > ul {
-        display: none; /* Hide menu initially on smaller screens */
-        flex-direction: column;
-        gap: 8px;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 50px;
-        left: 0;
-        padding: 8px 0;
-    }
-
-    .menu-btn {
-        display: block;
-        font-size: 24px; /* Adjust font size for the button */
-    }
-
-    header > nav > ul.show-menu {
-        display: flex;
-    }
-
-    header > nav > ul > a {
-        font-size: 14px;
-        padding: 8px 15px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media (max-width: 375px) {
-    header {
-        width: 100%;
-    }
-
-    header > nav > ul {
-        display: none;
-        flex-direction: column;
-        gap: 6px;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 50px;
-        left: 0;
-        padding: 6px 0;
-    }
-
-    .menu-btn {
-        display: block;
-        font-size: 22px;
-    }
-
-    header > nav > ul.show-menu {
-        display: flex;
-    }
-
-    header > nav > ul > a {
-        font-size: 13px;
-        padding: 6px 12px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media (max-width: 320px) {
-    header {
-        width: 100%;
-    }
-
-    header > nav > ul {
-        display: none;
-        flex-direction: column;
-        gap: 5px;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 50px;
-        left: 0;
-        padding: 5px 0;
-    }
-
-    .menu-btn {
-        display: block;
-        font-size: 20px;
-    }
-
-    header > nav > ul.show-menu {
-        display: flex;
-    }
-
-    header > nav > ul > a {
-        font-size: 12px;
-        padding: 5px 10px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-
