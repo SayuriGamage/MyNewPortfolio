@@ -192,6 +192,7 @@ section:nth-of-type(5)>div:nth-child(1){
     #div2>p{
         padding: 7px;
         color: gray;
+        font-size: 15px;
     }
 
 
