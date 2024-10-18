@@ -1,8 +1,7 @@
 
 
 section:nth-of-type(7) {
-   /* width: 100vw;
-    height: 100vh;*/
+
     padding: 10px;
     display: flex;
     flex-direction: column;

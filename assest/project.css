@@ -1,6 +1,7 @@
 
 section:nth-of-type(5){
     padding: 10px;
+
 }
 
 section:nth-of-type(5)>div:nth-child(1){
@@ -206,6 +207,19 @@ section:nth-of-type(5)>div:nth-child(1){
 
 }
 
+
+@media (max-width: 320px) {
+
+    #div1 {
+        width: 293px;
+        height: 385px;
+    }
+
+    #div2 {
+        width: 293px;
+        height: 385px;
+    }
+}
 
 
 
