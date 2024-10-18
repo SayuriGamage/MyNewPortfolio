@@ -268,27 +268,45 @@ header>nav>ul>a{
 
 /* For screens of 425px and below */
 @media (max-width: 425px) {
+
+
+
     header {
-        width: 90%;
-        padding: 5px;
+       display: none;
+    }
+
+    #box{
+        display: none;
     }
     #hero {
         display: flex;
         flex-direction: column;
         align-items: center; /* Center both icons and image */
         margin-top: 78px;
-        text-align: center;
+        margin-left: 0;
     }
+
+    #text {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center text horizontally */
+        justify-content: center; /* Center text vertically */
+    }
+
     #text1 {
+        text-align: center;
         font-size: 18px;
     }
     #text2 {
+        text-align: center;
         font-size: 35px;
     }
     #text3 {
+        text-align: center;
         font-size: 25px;
     }
     #text4 {
+        text-align: center;
         font-size: 12px;
         width: 100%;
     }
@@ -296,7 +314,8 @@ header>nav>ul>a{
         height: 286px;
         width: 355px;
         margin-top: 35px;
-        margin-left: 49px; /* Ensure the image is centered */
+        margin-left: 49px;
+
     }
     #icons {
         display: flex;
@@ -304,12 +323,12 @@ header>nav>ul>a{
         gap: 15px; /* Space between icons */
         margin-top: 20px;
     }
+
 }
 
 @media (max-width: 375px) {
     header {
-        width: 85%;
-        padding: 5px;
+      display: none;
     }
     #hero {
         margin-top: 78px;
@@ -349,8 +368,7 @@ header>nav>ul>a{
 /* For screens of 320px and below */
 @media (max-width: 320px) {
     header {
-        width: 80%;
-        padding: 5px;
+      display: none;
     }
     #hero {
         flex-direction: column;
