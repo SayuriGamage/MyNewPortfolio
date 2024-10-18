@@ -355,7 +355,7 @@ header>nav>ul>a{
         height: 268px;
         width: 346px;
         margin-top: 35px;
-        margin-left: 27px; /* Remove margin-left to center the image */
+        margin-left: 20px; /* Remove margin-left to center the image */
     }
     #icons {
         display: flex;
