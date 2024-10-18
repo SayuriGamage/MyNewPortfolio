@@ -186,6 +186,20 @@ section:nth-of-type(4)>div:nth-child(1)>div:nth-child(2){
 
 
 
+@media (max-width: 375px) {
+
+    section:nth-of-type(4)>div:nth-child(1)>div:nth-child(1){
+
+        font-size: 38px;
+    }
+
+    #divs{
+        padding: 13px;
+    }
+
+}
+
+
 
 
 

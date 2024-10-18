@@ -148,6 +148,62 @@ section:nth-of-type(5)>div:nth-child(1){
 }
 
 
+@media (max-width: 375px) {
+
+
+
+    section:nth-of-type(5)>div:nth-child(1){
+
+        font-size: 38px;
+    }
+
+    #div1 {
+        width: 341px;
+        height: 378px;
+    }
+
+    #div1>div{
+
+        font-size: 25px;
+    }
+
+    #div1>p{
+
+        padding: 7px;
+    }
+
+
+    #img1{
+
+        height: 176px;
+        width: 176px;
+    }
+
+
+    #div2{
+        width: 341px;
+        height: 378px;
+
+    }
+    #div2>div{
+        font-size: 25px;
+    }
+
+    #div2>p{
+        padding: 7px;
+        color: gray;
+    }
+
+
+    #img2{
+
+        height: 176px;
+        width: 176px;
+    }
+
+
+}
+
 
 
 
